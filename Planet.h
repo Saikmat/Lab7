@@ -2,9 +2,9 @@
  * Copyright 2023 - Howard Community College All rights reserved; Unauthorized duplication prohibited.
  * Name: Sai Matukumalli
  * Program name: Planets
- * Date: 10/12/2023
+ * Date: 11/02/2023
  * Program description: This planet class defines objects to store information about a planet. It can store the planet
- * name, the planet number from the sun, and the number of moons it has. It includes getters for all perameters but
+ * name, the planet number from the sun, and the number of moons it has. It includes getters for all parameters but
  * only a setter for the name, since the other information is updated using methods based on the name. It also includes
  * overrides for many of the common unary and binary operators to work with the object.
  */

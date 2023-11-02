@@ -2,9 +2,9 @@
  * Copyright 2023 - Howard Community College All rights reserved; Unauthorized duplication prohibited.
  * Name: Sai Matukumalli
  * Program name: Planets
- * Date: 10/12/2023
+ * Date: 11/02/2023
  * Program description: This planet class defines objects to store information about a planet. It can store the planet
- * name, the planet number from the sun, and the number of moons it has. It includes getters for all perameters but
+ * name, the planet number from the sun, and the number of moons it has. It includes getters for all parameters but
  * only a setter for the name, since the other information is updated using methods based on the name. It also includes
  * overrides for many of the common unary and binary operators to work with the object.
  */
@@ -103,6 +103,10 @@ void Planet::nameFromNumber(){
     }
 }
 
+/*
+ * Sets the radii of the planet based on the planet number
+ * No return since it is updating private data values
+ */
 void Planet::setRadius() {
     switch(planetNumber){
         case 1: radius = 1516; break;
@@ -204,7 +208,7 @@ Planet* Planet::operator++(){
 }
 
 /*
- * Postfix operator to add one to the planet number and return the resulant planet's information
+ * Postfix operator to add one to the planet number and return the resultant planet's information
  */
 Planet* Planet::operator++(int){
     this->planetNumber++;
@@ -232,11 +236,11 @@ Planet& Planet::operator=(Planet *p){
  * Allows read into the function that takes the planet name and sets all data values within the object given the name
  */
 std::istream &operator>>(std::istream &is, Planet &p) {
-    string name;
-    cout << "Enter the planet name: ";
-    cin >> name;
-    p.setName(name);
-    p.numberSetter();
+    int planetNum;
+    cout << "Enter the planet number: ";
+    cin >> planetNum;
+    p.planetNumber = planetNum;
+    p.nameFromNumber();
     p.moonSetter();
     p.setRadius();
     return is;
@@ -246,8 +250,8 @@ std::istream &operator>>(std::istream &is, Planet &p) {
  * Prints the data values of the object when fed directly to cout
  */
 ostream &operator<<(ostream &os, Planet &p){
-    os << "The planet " << p.getName() << " is planet number " << p.getPlanetNumber() << endl;
-    os << ". It has " << p.getNumberOfMoons() << " moons and a radius of" << p.getRadius() << " miles.";
+    os << "The planet " << p.getName() << " is planet number " << p.getPlanetNumber() << ". " << endl;
+    os << "It has " << p.getNumberOfMoons() << " moons and a radius of " << p.getRadius() << " miles.\n\n";
     return os;
 }
 
