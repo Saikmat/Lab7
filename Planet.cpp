@@ -1,8 +1,7 @@
 /*
- * Copyright 2023 - Howard Community College All rights reserved; Unauthorized duplication prohibited.
+ * Copyright 2024 - Howard Community College All rights reserved; Unauthorized duplication prohibited.
  * Name: Sai Matukumalli
  * Program name: Planets
- * Date: 11/02/2023
  * Program description: This planet class defines objects to store information about a planet. It can store the planet
  * name, the planet number from the sun, and the number of moons it has. It includes getters for all parameters but
  * only a setter for the name, since the other information is updated using methods based on the name. It also includes
@@ -211,6 +210,7 @@ Planet* Planet::operator++(){
  * Postfix operator to add one to the planet number and return the resultant planet's information
  */
 Planet* Planet::operator++(int){
+    Planet* original = new Planet(*this);
     this->planetNumber++;
     if(planetNumber > 8){
         planetNumber = 1;
@@ -218,7 +218,7 @@ Planet* Planet::operator++(int){
     this->nameFromNumber();
     this->moonSetter();
     this->setRadius();
-    return this;
+    return original;
 }
 
 /*
@@ -259,7 +259,7 @@ ostream &operator<<(ostream &os, Planet &p){
  * Prints HCC copyright statement
  */
 void Planet::printCopyright() {
-    cout << "\n\n\nCopyright 2023 - Howard Community College All rights reserved; Unauthorized duplication prohibited\n\n\n\n";
+    cout << "\n\n\nCopyright 2024 - Howard Community College All rights reserved; Unauthorized duplication prohibited\n\n\n\n";
 }
 
 

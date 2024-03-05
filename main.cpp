@@ -1,8 +1,7 @@
 /*
- * Copyright 2023 - Howard Community College All rights reserved; Unauthorized duplication prohibited.
+ * Copyright 2024 - Howard Community College All rights reserved; Unauthorized duplication prohibited.
  * Name: Sai Matukumalli
  * Program name: Planets Driver
- * Date: 11/02/2023
  * Program description: This driver is designed to test the planets class. It uses all methods in the class either
  * via calls within the function or by explicitly calling them. The program also introduces a template which is tested.
  */
