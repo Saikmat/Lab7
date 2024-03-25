@@ -12,8 +12,6 @@
 #include <iostream>
 #include <string>
 
-
-
 class Planet{
 
 private:
