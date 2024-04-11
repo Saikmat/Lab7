@@ -1,0 +1,17 @@
+# ninja log v5
+3	308	7206122349219803	CMakeFiles/Lab7.dir/main.cpp.obj	daff71ea6066cd4b
+2	309	7206113001932172	CMakeFiles/Lab7.dir/Planet.cpp.obj	31f43e105312f7ad
+308	381	7206122349913130	Lab7.exe	b209fd8cdde50e5d
+9	489	7345077793187661	CMakeFiles/Lab7.dir/main.cpp.obj	daff71ea6066cd4b
+3	490	7345077793197648	CMakeFiles/Lab7.dir/Planet.cpp.obj	31f43e105312f7ad
+490	716	7345077795420664	Lab7.exe	b209fd8cdde50e5d
+2	319	7345079626700060	CMakeFiles/Lab7.dir/main.cpp.obj	daff71ea6066cd4b
+320	397	7345079627447520	Lab7.exe	b209fd8cdde50e5d
+2	299	7345080272222333	CMakeFiles/Lab7.dir/main.cpp.obj	daff71ea6066cd4b
+299	373	7345080272934577	Lab7.exe	b209fd8cdde50e5d
+2	313	7345080562545695	CMakeFiles/Lab7.dir/main.cpp.obj	daff71ea6066cd4b
+313	388	7345080563256520	Lab7.exe	b209fd8cdde50e5d
+3	308	7345081486738398	CMakeFiles/Lab7.dir/main.cpp.obj	daff71ea6066cd4b
+308	383	7345081487461388	Lab7.exe	b209fd8cdde50e5d
+3	307	7345081749342119	CMakeFiles/Lab7.dir/main.cpp.obj	daff71ea6066cd4b
+308	380	7345081750039861	Lab7.exe	b209fd8cdde50e5d
